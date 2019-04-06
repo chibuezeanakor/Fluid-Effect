@@ -1,3 +1,4 @@
+
 header { 
     width: 100%;
     height: 100%;
@@ -9,3 +10,37 @@ header {
     height: 100%;
     background-image: url("Fluid-Images/contact_us_background.jpg");
 }
+
+@media screen and (max-width: 1399px){
+    .navbar>.container {
+        padding-right: 3.5rem;
+    }
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: #272727;
+    letter-spacing: .5px;
+    margin: 0;
+    padding: 10px 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    transition: all .5s;
+    text-align: left;
+    text-transform: uppercase;
+}
+.navbar-brand {
+    font-size: 25px;
+}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('Fluid-Images/MainBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+  }
+
