@@ -11,6 +11,13 @@ header {
     background-image: url("Fluid-Images/contact_us_background.jpg");
 }
 
+footer {
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0px;
+}
+
 @media screen and (max-width: 1399px){
     .navbar>.container {
         padding-right: 3.5rem;
