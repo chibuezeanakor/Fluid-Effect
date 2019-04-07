@@ -11,10 +11,10 @@ header {
     background-image: url("Fluid-Images/contact_us_background.jpg");
 }
 
-footer {
+#footer {
     padding-top: 0px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: inherit;
+    padding-right: inherit;
     margin-top: 0px;
 }
 
