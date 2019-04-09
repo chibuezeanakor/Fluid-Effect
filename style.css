@@ -1,43 +1,23 @@
-.jumbotron { 
-    background: transparent!important;
-}
-header { 
-    width: 100%;
-    height: 100%;
-    background-image: url("Fluid-Images/MainBackground.jpg");
-    border: 1px transparent;
-    animation-duration: 1s;
-    animation-name: borders;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes borders { 
-    0% {
-        border-bottom-left-radius: 10% 40%;
-        border-bottom-right-radius: 10% 40%;
-    }
-    100% {
-        border-bottom-left-radius: 40% 10%;
-        border-bottom-right-radius: 40% 10%;
-    }
-}
 #contact {
     width: 100%;
     height: 100%;
-    background-image: url("Fluid-Images/contact_us_background.jpg");
+    /*background-image: url("Fluid-Images/contact_us_background.jpg");*/
+    background: #fff;
+    padding-top: 100px; 
+    padding-bottom: 100px;
 }
-
 #footer {
     padding-top: 0px;
     padding-left: inherit;
     padding-right: inherit;
     margin-top: 0px;
 }
-
-@media screen and (max-width: 1399px){
+@media screen and (max-width: 1399px) {
     .navbar>.container {
         padding-right: 3.5rem;
+    }
+    .cont { 
+        border-bottom: 1px solid; 
     }
 }
 .navbar .navbar-nav .nav-link {
@@ -66,5 +46,33 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.9;
-  }
-
+}
+.masthead:before { 
+    content: '';
+    background: url('Fluid-Images/wave.png');
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left:0;
+    animation: wavyboi 10s linear infinite;
+}
+.masthead:after { 
+    content: '';
+    background: url('Fluid-Images/wave.png');
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left:0; 
+    opacity: 0.5;
+    animation: wavyboi-reverse 10s linear infinite;
+}
+@keyframes wavyboi { 
+    0% { background-position: 0;}
+    100% { background-position: 1360px;}
+}
+@keyframes wavyboi-reverse { 
+    0% { background-position: 1360px;}
+    100% { background-position: 0;}
+}
