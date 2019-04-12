@@ -7,18 +7,17 @@
     padding-bottom: 100px;
 }
 #footer {
-    padding-top: 0px;
+    padding-top: 15px;
     padding-left: inherit;
     padding-right: inherit;
-    margin-top: 0px;
 }
 @media screen and (max-width: 1399px) {
     .navbar>.container {
         padding-right: 3.5rem;
     }
-    .cont { 
-        border-bottom: 1px solid; 
-    }
+    .cont {
+        border-bottom: 1px lightgray solid;
+        padding-top: 5px;
 }
 .navbar .navbar-nav .nav-link {
     font-size: 14px;
@@ -46,6 +45,21 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.9;
+  }
+.fa.fa-phone {
+    font-size: 32px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.fa.fa-map-marker {
+    font-size: 32px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.fa.fa-envelope {
+    font-size: 32px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 .masthead:before { 
     content: '';
