@@ -9,21 +9,32 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="Fluid-Fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
   <!-- Animate On Scroll Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <script src="navcolor.js" type="text/javascript"></script>
   <title>Fluid Effect Template</title>
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
     <div class="container padding-15px-lr md-padding-15px-lr sm-padding-15px-all">
       <a class="navbar-brand font-weight-bold" href="#">Fluid-Effect</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -36,13 +47,13 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#AboutUs">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -62,17 +73,23 @@
       </div>
     </div>
   </header>
-  
+
   <section>
-    <div class="container-fluid">
+    <div class="container-fluid" id="AboutUs">
       <div class="row" style="padding-top:50px;">
         <div class="col-lg-8">
           <h2 class="section-heading text-uppercase">About Us</h2>
-          <h4>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur</h4>
+          <h4>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+            consectetur.Lorem ipsum dolor sit amet consectetur</h4>
           <br>
-          <h4>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</h4>
+          <h4>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+            consectetur.Lorem ipsum dolor sit amet consectetur.</h4>
         </div>
-        <div class="col-lg-4"><div class="card"><img src="Fluid-Images/tiger.jpg" width=300px; height="250px";></div></div>
+        <div class="col-lg-4">
+          <div class="col-lg-6">
+            <div class="card img-responsive"><img src="Fluid-Images/tiger.jpg"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -126,58 +143,50 @@
     </div>
   </section>
 
-    <div id="footer" class="bg-white padding-30px-tb border-top border-color-medium-gray">
-        <div class="container">
-            <div class="row info">
-                <!-- start quickly contact -->
-                <div class="col-lg-4 col-md-3 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
-                    <span class="fa fa-phone"></span>
-                    <div class="cont">
-                        <h6>Phone</h6>
-                        <p>(+44) 123 456 789</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
-                    <span class="fa fa-map-marker" aria-hidden="true"></span>
-                    <div class="cont">
-                        <h6>Address</h6>
-                        <p>3389 Eglinton Avenue, London </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 item text-center">
-                    <span class="fa fa-envelope" aria-hidden="true"></span>
-                    <div class="cont">
-                        <h6>Email</h6>
-                        <p>email@youradress.com</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- end quickly contact -->
-            <!-- social media buttons -->
-            <div class="row text-center">
-              <ul class="text-center">
-                <li class="fa fa-facebook-official" aria-hidden="true"></li>
-                <li class="fa fa-instagram" aria-hidden="true"></li>
-                <li class="fa fa-twitter-square" aria-hidden="true"></li>
-              </ul>
-            </div>
-            <!-- end social media buttons -->
+  <div id="footer" class="bg-white padding-30px-tb border-top border-color-medium-gray">
+    <div class="container">
+      <div class="row info">
+        <!-- start quickly contact -->
+        <div
+          class="col-lg-4 col-md-3 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+          <span class="fa fa-phone"></span>
+          <div class="cont">
+            <h6>Phone</h6>
+            <p>(+44) 123 456 789</p>
+          </div>
         </div>
+        <div
+          class="col-lg-4 col-md-5 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+          <span class="fa fa-map-marker" aria-hidden="true"></span>
+          <div class="cont">
+            <h6>Address</h6>
+            <p>3389 Eglinton Avenue, London </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 item text-center">
+          <span class="fa fa-envelope" aria-hidden="true"></span>
+          <div class="cont">
+            <h6>Email</h6>
+            <p>email@youradress.com</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- end quickly contact -->
+      <!-- social media buttons -->
+      <div class="row text-center">
+        <ul class="text-center">
+          <li class="fa fa-facebook-official" aria-hidden="true"></li>
+          <li class="fa fa-instagram" aria-hidden="true"></li>
+          <li class="fa fa-twitter-square" aria-hidden="true"></li>
+        </ul>
+      </div>
+      <!-- end social media buttons -->
     </div>
+  </div>
 
   </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
