@@ -28,7 +28,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="paraxify.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Farsan|Lusitana|Merienda+One|Open+Sans|Open+Sans+Condensed:300|Oswald|Pacifico|Raleway|Roboto"
+    rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="paraxify.js"></script>
   <script src="navcolor.js" type="text/javascript"></script>
   <title>Fluid Effect Template</title>
 </head>
@@ -58,7 +63,7 @@
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Sponsors</a>
+            <a class="nav-link" href="#portfolio">Our Work</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Us</a>
@@ -86,8 +91,8 @@
   <section id="aboutUs">
     <div class="container">
       <div class="row" style="padding-top:100px;padding-bottom: 50px;">
-        <div class="col-lg-8">
-          <h2 class="section-heading text-uppercase" data-aos="zoom in">About Us</h2>
+        <div class="col-lg-8 movetocenter">
+          <h2 class="section-heading" data-aos="zoom in">About Us</h2>
           <h4>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
             consectetur.Lorem ipsum dolor sit amet consectetur</h4>
           <br>
@@ -102,12 +107,12 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" style="background-color:orange;">
+  <section id="services" class="paraxify">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline services-head text-center">
-            <h2>Our Services</h2>
+            <h2 class="fixmarg">Our Services</h2>
           </div>
         </div>
       </div>
@@ -120,15 +125,15 @@
                 <a class="services-icon" href="#">
                   <i class="fa fa-code"></i>
                 </a>
-                <h4>Expert Coder</h4>
-                <p class="text-justify">
+                <h4 class="service-sections">Expert Coder</h4>
+                <p id="service-one-description" class="service-description">
                   will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype
                   looks finished by.
                 </p>
               </div>
             </div>
-            <!-- end about-details -->
           </div>
+          <!-- end about-details -->
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="about-move">
@@ -137,15 +142,15 @@
                 <a class="services-icon" href="#">
                   <i class="fa fa-camera-retro"></i>
                 </a>
-                <h4>Creative Designer</h4>
-                <p>
+                <h4 class="service-sections">Creative Designer</h4>
+                <p id="service-two-description" class="service-description">
                   will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype
                   looks finished by.
                 </p>
               </div>
             </div>
-            <!-- end about-details -->
           </div>
+          <!-- end about-details -->
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
           <!-- end col-md-4 -->
@@ -155,15 +160,15 @@
                 <a class="services-icon" href="#">
                   <i class="fa fa-wordpress"></i>
                 </a>
-                <h4>Wordpress Developer</h4>
-                <p>
+                <h4 class="service-sections">Wordpress Developer</h4>
+                <p id="service-three-description" class="service-description">
                   will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype
                   looks finished by.
                 </p>
               </div>
             </div>
-            <!-- end about-details -->
           </div>
+          <!-- end about-details -->
         </div>
       </div>
       <div class="row text-center">
@@ -173,17 +178,17 @@
             <div class="services-details">
               <div class="single-services">
                 <a class="services-icon" href="#">
-                  <i class="fa fa-camera-retro"></i>
+                  <i class="fa fa-tablet"></i>
                 </a>
-                <h4>Social Marketer </h4>
-                <p>
+                <h4 class="service-sections">Social Marketer </h4>
+                <p id="service-four-description" class="service-description">
                   will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype
                   looks finished by.
                 </p>
               </div>
             </div>
-            <!-- end about-details -->
           </div>
+          <!-- end about-details -->
         </div>
         <!-- End Left services -->
         <div class="col-md-4 col-sm-4 col-xs-12">
@@ -194,15 +199,15 @@
                 <a class="services-icon" href="#">
                   <i class="fa fa-bar-chart"></i>
                 </a>
-                <h4>Seo Expart</h4>
-                <p>
+                <h4 class="service-sections">Seo Expert</h4>
+                <p id="service-five-description" class="service-description">
                   will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype
                   looks finished by.
                 </p>
               </div>
             </div>
-            <!-- end about-details -->
           </div>
+          <!-- end about-details -->
         </div>
         <!-- End Left services -->
         <div class="col-md-4 col-sm-4 col-xs-12">
@@ -213,60 +218,57 @@
                 <a class="services-icon" href="#">
                   <i class="fa fa-ticket"></i>
                 </a>
-                <h4>24/7 Support</h4>
-                <p>
+                <h4 class="service-sections">24/7 Support</h4>
+                <p id="service-six-description" class="service-description">
                   will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype
                   looks finished by.
                 </p>
               </div>
             </div>
-            <!-- end about-details -->
           </div>
+          <!-- end about-details -->
         </div>
       </div>
     </div>
     </div>
+    </div>
   </section>
 
-  <section id="portfolio" style="background-color:green;">
-    <div class="portfolio">
-      <h1 class="text-center">Portfolio</h1>
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="container-fluid parlx">
       <div class="container">
-        <div class="row mb-3">
+        <h2 class="text-center text-white">Our Work</h2>
+        <div class="row xyz">
           <div class="col-md-4">
-            <img src="Fluid-Images/MainBackground.jpg" class="img-fluid">
+            <img src="Fluid-Images/1.jpg" class="img-fluid">
           </div>
           <div class="col-md-4">
-            <img src="Fluid-Images/MainBackground.jpg" class="img-fluid">
+            <img src="Fluid-Images/2.jpg" class="img-fluid">
           </div>
           <div class="col-md-4">
-            <img src="Fluid-Images/MainBackground.jpg" class="img-fluid">
+            <img src="Fluid-Images/3.jpg" class="img-fluid">
           </div>
           <div class="col-md-4">
-            <img src="Fluid-Images/MainBackground.jpg" class="img-fluid">
+            <img src="Fluid-Images/4.jpg" class="img-fluid">
           </div>
           <div class="col-md-4">
-            <img src="Fluid-Images/MainBackground.jpg" class="img-fluid">
+            <img src="Fluid-Images/5.jpg" class="img-fluid">
           </div>
           <div class="col-md-4">
-            <img src="Fluid-Images/MainBackground.jpg" class="img-fluid">
+            <img src="Fluid-Images/6.jpg" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sponsors -->
-  <section id="sponsors">
-
-  </section>
   <!-- Contact Us -->
-  <section id="contact">
+  <section id="contact" class="paraxify">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 id="contact-header" class="section-heading">Contact Us</h2><br>
         </div>
       </div>
       <div class="row">
@@ -311,27 +313,25 @@
   </section>
 
   <!-- Footer Section -->
-  <div id="footer" class="padding-30px-tb border-top border-color-medium-gray">
+  <section id="footer" class="padding-30px-tb border-top border-color-medium-gray">
     <div class="container">
       <div class="row info">
         <!-- start quickly contact -->
-        <div
-          class="col-lg-4 col-md-3 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+        <div id="footer-contact-phone" class="col-lg-4 col-md-4 item text-center">
           <span class="fa fa-phone"></span>
           <div class="cont">
             <h6>Phone</h6>
             <p>(123)-234-456</p>
           </div>
         </div>
-        <div
-          class="col-lg-4 col-md-5 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+        <div id="footer-contact-address" class="col-lg-4 col-md-4 item text-center">
           <span class="fa fa-map-marker" aria-hidden="true"></span>
           <div class="cont">
             <h6>Address</h6>
             <p>1234 Somewhere,street </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 item text-center">
+        <div id="footer-contact-email" class="col-lg-4 col-md-4 item text-center">
           <span class="fa fa-envelope" aria-hidden="true"></span>
           <div class="cont">
             <h6>Email</h6>
@@ -343,23 +343,25 @@
       <!-- end quickly contact -->
     </div>
 
-    <!-- social media buttons -->
+      <!-- social media buttons -->
 
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-lg-12" style="background-color:#ebebebec; padding-top:15px; padding-bottom: 10px;">
-          <i class="fa fa-facebook-official fa-2x"></i>
-          <i class="fa fa-instagram fa-2x"></i>
-          <i class="fa fa-twitter-square fa-2x"></i>
-          <i class="fa fa-github fa-2x"></i>
-          <p style="color:crimson; margin-bottom: 0px;"><b>@ Copyright of Ash, Chris & Rizvan</b></p>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12" style="background-color:#ebebebec; padding-top:15px; padding-bottom: 10px;">
+            <i class="fa fa-facebook-official fa-2x"></i>
+            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-twitter-square fa-2x"></i>
+            <i class="fa fa-github fa-2x"></i>
+            <p style="color:crimson; margin-bottom: 0px;"><b>@ Copyright of Ash, Chris & Rizvan</b></p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- end social media buttons -->
+      <!-- end social media buttons -->
 
-  </div>
-
+  </section>
+  <script>
+    myParaxify = paraxify('.paraxify');
+  </script>
 </body>
 
 </html>
