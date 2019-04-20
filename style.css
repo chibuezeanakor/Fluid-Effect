@@ -163,8 +163,9 @@ img {
         padding-bottom: 20px;
     }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 768px){
     #footer-contact-phone, #footer-contact-address {
         border-right: 1px solid darkgray;
+        border-bottom-style: none!important;
     }
 }
