@@ -25,12 +25,6 @@ img {
 .card {
     border: none!important;
 }
-@media only screen and (max-width: 1399px){
-    .cont {
-        border-bottom: 1px lightgray solid;
-        padding-top: 5px;
-    }
-}
 .col-lg-4.col-md-4.col-sm-12 { 
     padding-right: 5px;
     padding-left: 5px;
@@ -161,4 +155,16 @@ img {
 }
 .fa.fa-ticket {
     color: #FF00FF;
+}
+@media only screen and (max-width: 768px){
+    #footer-contact-phone, #footer-contact-address {
+        border-bottom: 1px solid darkgray;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 769px){
+    #footer-contact-phone, #footer-contact-address {
+        border-right: 1px solid darkgray;
+    }
 }
